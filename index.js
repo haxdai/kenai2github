@@ -219,7 +219,7 @@ https.get(config.jira.url, (res) => {
       console.log(`Processed ${issues.length} issues.`);
       console.log("Creating issues in github repo...");
       issues.forEach((issue, i) => {
-        createGithubIssue(issue);
+        createGithubIssue(issue, config.simulate);
       });
       console.log("Finished creating issues in github repo");
     });
