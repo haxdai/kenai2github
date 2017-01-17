@@ -1,0 +1,25 @@
+{
+  "name": "kenai2github",
+  "version": "1.0.0",
+  "description": "Node app to migrate kenai issues to github issues",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haxdai/kenai2github.git"
+  },
+  "author": "Hasdai Pacheco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haxdai/kenai2github/issues"
+  },
+  "homepage": "https://github.com/haxdai/kenai2github#readme",
+  "dependencies": {
+    "github": "^8.1.0",
+    "https": "^1.0.0",
+    "jsonfile": "^2.4.0",
+    "xml2js": "^0.4.17"
+  }
+}
