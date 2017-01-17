@@ -166,7 +166,7 @@ function createIssueObject(jsonItem) {
 
 function createGithubIssue(issue, simulate=false) {
   if (simulate) {
-    console.lg("Creating github issue "+issue.title);
+    console.log("Creating github issue "+issue.title);
     return;
   }
   github.issues.create({owner:config.github.repoowner, repo:config.github.reponame, title:issue.title, body: getIssueBody(issue), labels: getIssueLabels(issue)},
