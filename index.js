@@ -195,7 +195,7 @@ github.authenticate({
 
 let parser = new xml2js.Parser();
 let rawData = '';
-https.get('https://kenai.com/jira/sr/jira.issueviews:searchrequest-xml/temp/SearchRequest.xml?jqlQuery=project+%3D+'+config.jira.project+'&tempMax=9999', (res) => {
+https.get(config.jira.url, (res) => {
   res.on('data', (chunk) => rawData += chunk);
   res.on('end', () => {
     console.log("Processing issues...");
